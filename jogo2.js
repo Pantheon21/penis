@@ -15,16 +15,16 @@ function verResposta () {
     var chute = document.getElementById("inputa").value;
     while (vidas > 0) {
       if (vitoria == 1){
-        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Já ganhou por favor para ou eu irei comer seu cu";
+        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Se já ganhou fi de quenga";
         break;
       }
       if (chute != personaMorto) {
-        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Errou tente outra vez";
+        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Errou tenta de novo vagabundo kkkkkkkkk";
         vidas = vidas - 1;
         break;
       }
       else {
-        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Meus parabéns invocador, você advinhou";
+        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Parabéns você acertou agora vire uma loli";
         vitoria = vitoria + 1;
         break;
       }
