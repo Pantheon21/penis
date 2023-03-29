@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo alternativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="back">
+    <header class="corpodomenu">
+        <nav>
+            <a class="menu_2" href="index.html">Jogo principal</a>
+            <a class="menu_2" href="itens.html">Lista de itens</a>
+            <a class="menu_2" href="alistasia.html">Jogo alternativo</a>
+        </nav>
+    </header>
+        <main class="tudo_melhor">
+            <img src="destí.png" class="imagem">
+            <script src="jogo2.js"></script>
+            <input list="persona" type="text" class="inputa" id="inputa">
+            <button class="butao" id="butao">Confirmar</button>
+            <script>
+                var butao = document.getElementById("butao"); 
+                butao.addEventListener("click", verResposta, true);
+               </script>  
+          <datalist id="persona">
+              <script>
+               document.open();
+                escreverPersona()
+               document.close();
+              </script>
+          </datalist>
+        </main>
+        <footer>
+        </footer>
+</body>
+</html>
