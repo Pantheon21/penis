@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de azar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tudo">
+    <header class="corpodomenu">
+        <nav>
+            <a class="menu" href="index.html">Jogo principal</a>
+            <a class="menu" href="itens.html">Lista de itens</a>
+            <a class="menu" href="alistasia.html">Jogo alternativo</a>
+        </nav>
+    </header>
+    <main class="tudo_melhor">
+        <img src="cavalo.png" class="imagem">
+        <script src="jogo.js"></script>
+        <input list="lista" type="text" id="chute">
+        <button class="buto" id="buto">Confirmar</button>
+             <script>
+              var buto = document.getElementById("buto"); 
+              buto.addEventListener("click", verResposta, true);
+             </script>  
+        <datalist id="lista">
+            <script>
+             document.open();
+              escreverItens()
+             document.close();
+            </script>
+        </datalist>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
