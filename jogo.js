@@ -126,6 +126,10 @@ function verResposta () {
         break;
       }
     }
+    if (vidas < 1 && chute != itemComprado) {
+      document.getElementsByClassName("texto")[0].innerHTML= "Você perdeu, a resposta era: " + itemComprado;
+      }
+   }
     if (vidas == 0) {
       document.getElementsByClassName("texto")[0].innerHTML= "CHEGA VOCÊ JÁ PERDEU FDP - mattheaus, 2023";
     }
