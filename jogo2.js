@@ -24,6 +24,7 @@ function verResposta () {
         vidas = vidas - 1;
         document.getElementsByClassName("texto_segundo")[0].innerHTML= "Errou tenta de novo vagabundo kkkkkkkkk, tu tem mais "+vidas+" chances";
         input.value = "";
+        input.focus();
         break;
       }
       else {
