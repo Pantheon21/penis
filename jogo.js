@@ -116,8 +116,8 @@ function verResposta () {
         break;
       }
       if (chute != itemComprado) {
-        document.getElementsByClassName("texto")[0].innerHTML= "Errou tente outra vez";
         vidas = vidas - 1;
+        document.getElementsByClassName("texto")[0].innerHTML= "Errou tente outra vez, você tem mais "+vidas+" chances";
         break;
       }
       else {
