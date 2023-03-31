@@ -122,6 +122,7 @@ function verResposta () {
         vidas = vidas - 1;
         document.getElementsByClassName("texto")[0].innerHTML= "Errou tente outra vez, você tem mais "+vidas+" chances";
         input.value = "";
+        input.focus();
         break;
       }
       else {
