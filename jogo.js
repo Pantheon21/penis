@@ -109,6 +109,9 @@ listaItens =
 'Ampulheta de Zhonya',
 ]
 function verResposta () {
+    var input = document.querySelector('input');
+    
+    
     var chute = document.getElementById("chute").value;
     while (vidas > 0) {
       if (vitoria == 1){
@@ -118,6 +121,7 @@ function verResposta () {
       if (chute != itemComprado) {
         vidas = vidas - 1;
         document.getElementsByClassName("texto")[0].innerHTML= "Errou tente outra vez, você tem mais "+vidas+" chances";
+        input.value = "";
         break;
       }
       else {
