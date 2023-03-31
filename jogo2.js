@@ -19,8 +19,8 @@ function verResposta () {
         break;
       }
       if (chute != personaMorto) {
-        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Errou tenta de novo vagabundo kkkkkkkkk";
         vidas = vidas - 1;
+        document.getElementsByClassName("texto_segundo")[0].innerHTML= "Errou tenta de novo vagabundo kkkkkkkkk, tu tem mais "+vidas+" chances";
         break;
       }
       else {
