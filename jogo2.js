@@ -12,6 +12,8 @@ listaPersonas =
 ]
 
 function verResposta () {
+    var input = document.querySelector("input");
+    
     var chute = document.getElementById("inputa").value;
     while (vidas > 0) {
       if (vitoria == 1){
@@ -21,6 +23,7 @@ function verResposta () {
       if (chute != personaMorto) {
         vidas = vidas - 1;
         document.getElementsByClassName("texto_segundo")[0].innerHTML= "Errou tenta de novo vagabundo kkkkkkkkk, tu tem mais "+vidas+" chances";
+        input.value = "";
         break;
       }
       else {
